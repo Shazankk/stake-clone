@@ -11,7 +11,7 @@ const AppFooter = () => {
           {/* Logo and Copyright */}
           <div className="flex flex-col items-center md:items-start">
             <img
-              src="src\assets\cglogo.png" // Replace with your logo URL
+              src="/cglogo.png" // Replace with your logo URL
               className="h-12 mb-2"
               alt="Team CGF Logo"
             />

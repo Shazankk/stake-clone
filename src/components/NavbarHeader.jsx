@@ -11,7 +11,7 @@ export default function NavbarHeader() {
     >
       <Navbar.Brand href="#">
         <img
-          src="src\assets\cglogo.png"
+          src="/cglogo.png"
           className="mr-3 h-8 sm:h-10"
           alt="Team CGF Logo"
         />

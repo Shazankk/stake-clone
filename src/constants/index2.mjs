@@ -1,12 +1,17 @@
 import puppeteer from "puppeteer-extra";
 import fs from "fs";
+import path from "path";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 
 puppeteer.use(StealthPlugin());
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"], // Disable sandboxing
+  });
   const page = await browser.newPage();
+  const outputPath = path.resolve("data.json");
 
   await page.goto("https://www.bigfoltz.com/leaderboards");
   await page.waitForSelector(
@@ -44,7 +49,6 @@ puppeteer.use(StealthPlugin());
       )
     ).forEach((c) => {
       const user = c.querySelector(":nth-child(1) p").textContent;
-
       const wagered = c.querySelector("div:nth-child(2) ").textContent;
       const price = c.querySelector("div:nth-child(3) ").textContent;
       cards.push({
@@ -60,5 +64,5 @@ puppeteer.use(StealthPlugin());
   });
 
   await browser.close();
-  fs.writeFileSync("data.json", JSON.stringify(scrapedData, null, 2));
+  fs.writeFileSync(outputPath, JSON.stringify(scrapedData, null, 2));
 })();

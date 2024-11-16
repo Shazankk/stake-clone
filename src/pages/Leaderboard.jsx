@@ -1,7 +1,8 @@
 // src/pages/Leaderboard.jsx
 
 import LeaderboardCard from "../components/LeaderboardCard";
-import data from "../constants/data.json";
+import data from "../../public/data.json"; //For prod
+// import data from "../constants/data.json";
 
 export const Leaderboard = () => {
   // Sort data by wagered amount to get the top 3

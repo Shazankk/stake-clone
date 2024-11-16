@@ -1,7 +1,8 @@
 // src/pages/LeaderboardPage.jsx
 
 import LeaderboardTable from "../components/LeaderboardTable";
-import data from "../constants/data.json";
+import data from "../../public/data.json"; //For prod
+// import data from "../constants/data.json";
 
 const LeaderboardPage = () => {
   return (
