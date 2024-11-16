@@ -5,6 +5,7 @@ import { Leaderboard } from "./pages/Leaderboard";
 import Timer from "./components/Timer";
 import AppFooter from "./components/Footer";
 import LeaderboardPage from "./pages/LeaderboardPage";
+import Offers from "./pages/Offers";
 
 function App() {
   return (
@@ -19,21 +20,26 @@ function App() {
         </h1>
 
         {/* Leaderboard Cards Section */}
-        <div className="mb-12 w-full max-w-7xl flex flex-col items-center">
+        <div className="mb-8 w-full max-w-7xl flex flex-col items-center">
           <Leaderboard />
         </div>
 
         {/* Timer Section */}
-        <div className="flex justify-center my-8 w-full">
+        <div className="flex justify-center mb-8 w-full">
           <Timer />
         </div>
 
         {/* Leaderboard Table Section */}
         <div
           id="LeaderboardPage"
-          className="w-full max-w-6xl mt-8 mb-12 p-4 bg-gray-800 rounded-lg shadow-lg"
+          className="w-full max-w-6xl mb-8 p-4 bg-gray-800 rounded-lg shadow-lg"
         >
           <LeaderboardPage />
+        </div>
+
+        {/* Offers Section */}
+        <div className="w-full">
+          <Offers />
         </div>
       </main>
 
