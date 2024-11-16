@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 
 import { Footer } from "flowbite-react";
-import { FaDiscord, FaKickstarter, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaKickstarterK, FaTwitter } from "react-icons/fa";
 
 const AppFooter = () => {
   return (
@@ -117,7 +117,7 @@ const AppFooter = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors"
               >
-                <FaKickstarter size={20} />
+                <FaKickstarterK size={20} />
               </a>
               <a
                 href="http://twitter.com/cherieann"
