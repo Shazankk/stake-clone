@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 
 import { Footer } from "flowbite-react";
-import { FaDiscord, FaTwitch, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaKickstarter, FaTwitter } from "react-icons/fa";
 
 const AppFooter = () => {
   return (
@@ -11,12 +11,23 @@ const AppFooter = () => {
           {/* Logo and Copyright */}
           <div className="flex flex-col items-center md:items-start">
             <img
-              src="https://flowbite.com/docs/images/logo.svg" // Replace with your logo URL
+              src="src\assets\cglogo.png" // Replace with your logo URL
               className="h-12 mb-2"
               alt="Team CGF Logo"
             />
             <span className="text-gray-500 text-sm">
               &copy; {new Date().getFullYear()} teamcgf.com
+            </span>
+            <span className="text-gray-500 text-sm">
+              Developed by{" "}
+              <a
+                href="https://www.shazankk.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Shazankk
+              </a>
             </span>
           </div>
 
@@ -93,7 +104,7 @@ const AppFooter = () => {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="https://discord.com"
+                href="https://discord.gg/teamcg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors"
@@ -101,15 +112,15 @@ const AppFooter = () => {
                 <FaDiscord size={20} />
               </a>
               <a
-                href="https://twitch.tv"
+                href="http://kick.com/cherieann"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors"
               >
-                <FaTwitch size={20} />
+                <FaKickstarter size={20} />
               </a>
               <a
-                href="https://twitter.com"
+                href="http://twitter.com/cherieann"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors"

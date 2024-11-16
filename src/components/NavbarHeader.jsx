@@ -11,7 +11,7 @@ export default function NavbarHeader() {
     >
       <Navbar.Brand href="#">
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="src\assets\cglogo.png"
           className="mr-3 h-8 sm:h-10"
           alt="Team CGF Logo"
         />

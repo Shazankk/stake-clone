@@ -14,7 +14,7 @@ function App() {
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center p-4 md:p-12">
-        <h1 className="text-8xl font-bold mb-10 text-center text-gray-200">
+        <h1 className="text-6xl font-bold mb-10 text-center text-gray-200">
           Welcome to Team CGF Leaderboard
         </h1>
 
