@@ -8,7 +8,7 @@ const LeaderboardTable = ({ data }) => {
   const limitedData = data.slice(3, 53);
 
   return (
-    <div className="overflow-y-auto max-h-[100vh] w-full custom-scrollbar">
+    <div className="overflow-y-auto max-h-auto w-full">
       <Table className="w-full bg-gray-900 text-white rounded-lg shadow-lg">
         <Table.Head className="sticky top-0 bg-gray-800 z-10">
           <Table.HeadCell className="text-left text-gray-100 font-bold w-12 border-b border-gray-600">

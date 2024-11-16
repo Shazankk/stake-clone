@@ -31,7 +31,7 @@ function App() {
         {/* Leaderboard Table Section */}
         <div
           id="LeaderboardPage"
-          className="w-full max-w-5xl mt-8 mb-12 p-4 bg-gray-800 rounded-lg shadow-lg"
+          className="w-full max-w-6xl mt-8 mb-12 p-4 bg-gray-800 rounded-lg shadow-lg"
         >
           <LeaderboardPage />
         </div>

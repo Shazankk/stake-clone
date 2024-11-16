@@ -32,7 +32,7 @@ export default function NavbarHeader() {
         >
           Leaderboard
         </a>
-        <a
+        {/* <a
           href="/services"
           className="text-gray-300 hover:text-green-400 font-semibold transition-colors duration-200"
         >
@@ -43,12 +43,14 @@ export default function NavbarHeader() {
           className="text-gray-300 hover:text-green-400 font-semibold transition-colors duration-200"
         >
           Pricing
-        </a>
+        </a> */}
         <a
-          href="/contact"
+          href="https://discord.gg/teamcg"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-gray-300 hover:text-green-400 font-semibold transition-colors duration-200"
         >
-          Contact
+          Discord
         </a>
       </div>
     </Navbar>

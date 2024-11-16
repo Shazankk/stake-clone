@@ -21,7 +21,7 @@ const AppFooter = () => {
             <span className="text-gray-500 text-sm">
               Developed by{" "}
               <a
-                href="https://www.shazankk.github.io"
+                href="https://shazankk.github.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"

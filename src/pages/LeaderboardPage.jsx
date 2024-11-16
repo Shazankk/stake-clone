@@ -6,7 +6,7 @@ import data from "../../public/data.json"; //For prod
 
 const LeaderboardPage = () => {
   return (
-    <div className="p-6 bg-gray-900 min-h-screen transform hover:scale-105 flex justify-center">
+    <div className="p-6 bg-gray-900 min-h-screen transform flex justify-center">
       <div className="w-full max-w-8xl">
         <LeaderboardTable data={data} />
       </div>
