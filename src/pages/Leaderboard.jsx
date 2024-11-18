@@ -46,15 +46,37 @@ export const Leaderboard = () => {
       ) : error ? (
         <p className="text-red-500">Error: {error}</p>
       ) : (
-        topThree.map((user) => (
-          <LeaderboardCard
-            key={user.rank}
-            rank={user.rank}
-            username={user.user}
-            wagered={user.wagered}
-            prize={user.price}
-          />
-        ))
+        <>
+          {/* Rank 2 */}
+          <div className="order-1 md:order-2">
+            <LeaderboardCard
+              rank={topThree[1]?.rank}
+              username={topThree[1]?.user}
+              wagered={topThree[1]?.wagered}
+              prize={topThree[1]?.price}
+            />
+          </div>
+
+          {/* Rank 1 */}
+          <div className="order-2 md:order-1">
+            <LeaderboardCard
+              rank={topThree[0]?.rank}
+              username={topThree[0]?.user}
+              wagered={topThree[0]?.wagered}
+              prize={topThree[0]?.price}
+            />
+          </div>
+
+          {/* Rank 3 */}
+          <div className="order-3 md:order-3">
+            <LeaderboardCard
+              rank={topThree[2]?.rank}
+              username={topThree[2]?.user}
+              wagered={topThree[2]?.wagered}
+              prize={topThree[2]?.price}
+            />
+          </div>
+        </>
       )}
     </div>
   );
