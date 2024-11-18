@@ -1,19 +1,31 @@
-// src/components/Timer.jsx
-
 import { useEffect, useState } from "react";
 
 const Timer = () => {
   const calculateTimeLeft = () => {
-    const now = new Date();
+    // Get current time as a timestamp in UTC
+    const nowUTC = Date.now(); // Always in UTC
 
-    // Calculate the next month (reset to January if current month is December)
-    const targetMonth = now.getMonth() === 11 ? 0 : now.getMonth() + 1;
+    const utcPlusTwo = nowUTC;
+
+    // Calculate the target date for UTC+2
+    const currentDateUTCPlusTwo = new Date(utcPlusTwo);
+    const targetMonth =
+      currentDateUTCPlusTwo.getUTCMonth() === 11
+        ? 0
+        : currentDateUTCPlusTwo.getUTCMonth() + 1;
     const targetYear =
-      now.getMonth() === 11 ? now.getFullYear() + 1 : now.getFullYear();
+      currentDateUTCPlusTwo.getUTCMonth() === 11
+        ? currentDateUTCPlusTwo.getUTCFullYear() + 1
+        : currentDateUTCPlusTwo.getUTCFullYear();
 
-    // Set the target date to the first day of the next month at 00:00:00
-    const targetDate = new Date(targetYear, targetMonth, 1, 2, 0, 0);
-    const difference = targetDate - now;
+    // Target date is 1st of the next month at 00:00:00 UTC+2
+    const targetDateUTCPlusTwo = Date.UTC(targetYear, targetMonth, 1, 0, 0, 0);
+
+    // Add 2 hours to the target date to align with UTC+2
+    const targetDateMillis = targetDateUTCPlusTwo + 2 * 60 * 60 * 1000;
+
+    // Calculate the time difference
+    const difference = targetDateMillis - utcPlusTwo;
 
     let timeLeft = {};
 
@@ -21,7 +33,7 @@ const Timer = () => {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
     } else {
@@ -45,19 +57,19 @@ const Timer = () => {
     <div className="flex justify-center items-center p-6 bg-gray-900 rounded-lg shadow-lg text-green-400 space-x-6 transform hover:scale-105">
       <div className="text-center">
         <span className="text-2xl font-semibold text-gray-400">DAYS</span>
-        <div className="text-7xl font-bold">{timeLeft.days}</div>
+        <div className="text-6xl font-bold">{timeLeft.days}</div>
       </div>
       <div className="text-center">
         <span className="text-2xl font-semibold text-gray-400">HOURS</span>
-        <div className="text-7xl font-bold">{timeLeft.hours}</div>
+        <div className="text-6xl font-bold">{timeLeft.hours}</div>
       </div>
       <div className="text-center">
         <span className="text-2xl font-semibold text-gray-400">MINUTES</span>
-        <div className="text-7xl font-bold">{timeLeft.minutes}</div>
+        <div className="text-6xl font-bold">{timeLeft.minutes}</div>
       </div>
       <div className="text-center">
         <span className="text-2xl font-semibold text-gray-400">SECONDS</span>
-        <div className="text-7xl font-bold">{timeLeft.seconds}</div>
+        <div className="text-6xl font-bold">{timeLeft.seconds}</div>
       </div>
     </div>
   );
