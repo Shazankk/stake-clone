@@ -100,8 +100,8 @@ puppeteer.use(StealthPlugin());
   console.log(scrapedData);
   // Specify the absolute path for the data.json file
 
-  //   const outputPath = path.resolve("data.json");
-  const outputPath = path.resolve("/var/www/website/stake-clone/data.json");
+  const outputPath = path.resolve("data.json");
+  // const outputPath = path.resolve("/var/www/website/stake-clone/data.json");
 
   // Write the data to the specified path
   fs.writeFileSync(outputPath, JSON.stringify(scrapedData, null, 2));
