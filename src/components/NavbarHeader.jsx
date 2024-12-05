@@ -32,18 +32,6 @@ export default function NavbarHeader() {
         >
           Leaderboard
         </a>
-        {/* <a
-          href="/services"
-          className="text-gray-300 hover:text-green-400 font-semibold transition-colors duration-200"
-        >
-          Services
-        </a>
-        <a
-          href="/pricing"
-          className="text-gray-300 hover:text-green-400 font-semibold transition-colors duration-200"
-        >
-          Pricing
-        </a> */}
         <a
           href="https://discord.gg/teamcg"
           target="_blank"

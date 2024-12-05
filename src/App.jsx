@@ -1,12 +1,8 @@
-// src/App.jsx
-
 import NavbarHeader from "./components/NavbarHeader";
-import { Leaderboard } from "./pages/Leaderboard";
-import Timer from "./components/Timer";
-import AppFooter from "./components/Footer";
 import LeaderboardPage from "./pages/LeaderboardPage";
+import Timer from "./components/Timer";
+import Footer from "./components/Footer";
 import Offers from "./pages/Offers";
-import ScrollButtons from "./components/ScrollButtons";
 
 function App() {
   return (
@@ -16,38 +12,29 @@ function App() {
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center p-4 md:p-12">
+        {/* Page Title */}
         <h1 className="text-6xl font-bold mb-6 text-center text-gray-200">
           Welcome to Team CGF Leaderboard
         </h1>
-        <div className="w-full max-w-7xl flex flex-col items-center">
-          <ScrollButtons />
-        </div>
-        {/* Leaderboard Cards Section */}
-        <div className="w-full max-w-7xl flex flex-col items-center">
-          <Leaderboard />
-        </div>
 
         {/* Timer Section */}
-        <div className="flex justify-center w-full mb-4">
+        <div className="flex justify-center w-full mb-8">
           <Timer />
         </div>
 
-        {/* Leaderboard Table Section */}
-        <div
-          id="LeaderboardPage"
-          className="w-full max-w-6xl mb-8 p-4 bg-gray-800 rounded-lg shadow-lg"
-        >
+        {/* Leaderboard Section */}
+        <div id="LeaderboardPage" className="w-full max-w-7xl mb-8">
           <LeaderboardPage />
         </div>
 
         {/* Offers Section */}
-        <div className="w-full">
+        <div className="w-full max-w-7xl">
           <Offers />
         </div>
       </main>
 
       {/* Footer */}
-      <AppFooter />
+      <Footer />
     </div>
   );
 }
