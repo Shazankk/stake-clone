@@ -6,9 +6,9 @@ import PropTypes from "prop-types";
 const LeaderboardCard = ({ rank, username, wagered, prize }) => {
   // Define the trophy images based on rank
   const trophyImages = {
-    1: "https://www.bigfoltz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1st.a42a493e.png&w=128&q=75",
-    2: "https://www.bigfoltz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2nd.1b4c033e.png&w=128&q=75",
-    3: "https://www.bigfoltz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3rd.1cddde0d.png&w=128&q=75",
+    1: "trophy1.png",
+    2: "trophy2.png",
+    3: "trophy3.png",
   };
 
   // Style adjustments for Rank 1 card elevation

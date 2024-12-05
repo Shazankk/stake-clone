@@ -6,6 +6,7 @@ import Timer from "./components/Timer";
 import AppFooter from "./components/Footer";
 import LeaderboardPage from "./pages/LeaderboardPage";
 import Offers from "./pages/Offers";
+import ScrollButtons from "./components/ScrollButtons";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         <h1 className="text-6xl font-bold mb-6 text-center text-gray-200">
           Welcome to Team CGF Leaderboard
         </h1>
-
+        <div className="w-full max-w-7xl flex flex-col items-center">
+          <ScrollButtons />
+        </div>
         {/* Leaderboard Cards Section */}
         <div className="w-full max-w-7xl flex flex-col items-center">
           <Leaderboard />

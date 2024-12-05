@@ -9,7 +9,8 @@ export const Leaderboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/data.json"); // Fetching data.json locally
+        // Append a cache-busting parameter (timestamp) to the request URL
+        const response = await fetch(`/data.json?cacheBust=${Date.now()}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

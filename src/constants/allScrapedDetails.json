@@ -1,0 +1,755 @@
+{
+  "Stake": [
+    {
+      "user": "Cre******",
+      "wagered": 356078.1,
+      "prize": 11000
+    },
+    {
+      "user": "Yak******",
+      "wagered": 289911.63,
+      "prize": 5000
+    },
+    {
+      "user": "GXm******",
+      "wagered": 250893.21,
+      "prize": 2500
+    },
+    {
+      "rank": "4",
+      "name": "Mam******",
+      "wagered": 76820.54,
+      "prize": 1400
+    },
+    {
+      "rank": "5",
+      "name": "Kic******",
+      "wagered": 73362.23,
+      "prize": 1000
+    },
+    {
+      "rank": "6",
+      "name": "Jen******",
+      "wagered": 61660.18,
+      "prize": 800
+    },
+    {
+      "rank": "7",
+      "name": "Lad******",
+      "wagered": 59973.38,
+      "prize": 640
+    },
+    {
+      "rank": "8",
+      "name": "VGs******",
+      "wagered": 47637.69,
+      "prize": 480
+    },
+    {
+      "rank": "9",
+      "name": "XJQ******",
+      "wagered": 44257.72,
+      "prize": 400
+    },
+    {
+      "rank": "10",
+      "name": "Big******",
+      "wagered": 36110.42,
+      "prize": 320
+    },
+    {
+      "rank": "11",
+      "name": "the******",
+      "wagered": 32322.67,
+      "prize": 280
+    },
+    {
+      "rank": "12",
+      "name": "Sau******",
+      "wagered": 31090.68,
+      "prize": 240
+    },
+    {
+      "rank": "13",
+      "name": "Hma******",
+      "wagered": 30271.92,
+      "prize": 200
+    },
+    {
+      "rank": "14",
+      "name": "Ame******",
+      "wagered": 26147.99,
+      "prize": 140
+    },
+    {
+      "rank": "15",
+      "name": "Kmk******",
+      "wagered": 17898.18,
+      "prize": 100
+    },
+    {
+      "rank": "16",
+      "name": "kle******",
+      "wagered": 11762.01,
+      "prize": 90
+    },
+    {
+      "rank": "17",
+      "name": "Pic******",
+      "wagered": 11212.33,
+      "prize": 80
+    },
+    {
+      "rank": "18",
+      "name": "484******",
+      "wagered": 10953.15,
+      "prize": 70
+    },
+    {
+      "rank": "19",
+      "name": "tub******",
+      "wagered": 10942.6,
+      "prize": 60
+    },
+    {
+      "rank": "20",
+      "name": "Bbj******",
+      "wagered": 10771.08,
+      "prize": 50
+    },
+    {
+      "rank": "21",
+      "name": "iem******",
+      "wagered": 9533.08,
+      "prize": 40
+    },
+    {
+      "rank": "22",
+      "name": "Mic******",
+      "wagered": 8970.96,
+      "prize": 35
+    },
+    {
+      "rank": "23",
+      "name": "Dar******",
+      "wagered": 7515.22,
+      "prize": 30
+    },
+    {
+      "rank": "24",
+      "name": "Aki******",
+      "wagered": 6091.25,
+      "prize": 25
+    },
+    {
+      "rank": "25",
+      "name": "85Y******",
+      "wagered": 5874.35,
+      "prize": 20
+    },
+    {
+      "rank": "26",
+      "name": "Sco******",
+      "wagered": 5104.68
+    },
+    {
+      "rank": "27",
+      "name": "kap******",
+      "wagered": 4806.12
+    },
+    {
+      "rank": "28",
+      "name": "Sal******",
+      "wagered": 4744.04
+    },
+    {
+      "rank": "29",
+      "name": "Cot******",
+      "wagered": 4691.95
+    },
+    {
+      "rank": "30",
+      "name": "jah******",
+      "wagered": 4551.52
+    },
+    {
+      "rank": "31",
+      "name": "p0w******",
+      "wagered": 3416.56
+    },
+    {
+      "rank": "32",
+      "name": "Irv******",
+      "wagered": 3336.69
+    },
+    {
+      "rank": "33",
+      "name": "Swe******",
+      "wagered": 3223.46
+    },
+    {
+      "rank": "34",
+      "name": "Cmo******",
+      "wagered": 3011.2
+    },
+    {
+      "rank": "35",
+      "name": "bab******",
+      "wagered": 2779.81
+    },
+    {
+      "rank": "36",
+      "name": "Mjo******",
+      "wagered": 2559.94
+    },
+    {
+      "rank": "37",
+      "name": "lun******",
+      "wagered": 2260.08
+    },
+    {
+      "rank": "38",
+      "name": "Che******",
+      "wagered": 2238.21
+    },
+    {
+      "rank": "39",
+      "name": "NEE******",
+      "wagered": 2231.45
+    },
+    {
+      "rank": "40",
+      "name": "hor******",
+      "wagered": 2211.55
+    },
+    {
+      "rank": "41",
+      "name": "hul******",
+      "wagered": 2155.06
+    },
+    {
+      "rank": "42",
+      "name": "Ign******",
+      "wagered": 1864.68
+    },
+    {
+      "rank": "43",
+      "name": "Del******",
+      "wagered": 1694.81
+    }
+  ],
+  "Wager Raffle": [
+    {
+      "user": "Cre******",
+      "wagered": 1840504.67,
+      "prize": 7362
+    },
+    {
+      "user": "Che******",
+      "wagered": 1438108.09,
+      "prize": 5752
+    },
+    {
+      "user": "GXm******",
+      "wagered": 1330908.91,
+      "prize": 5323
+    },
+    {
+      "rank": "4",
+      "name": "Yak******",
+      "wagered": 935328.64,
+      "prize": 3741
+    },
+    {
+      "rank": "5",
+      "name": "Lad******",
+      "wagered": 695035.57,
+      "prize": 2780
+    },
+    {
+      "rank": "6",
+      "name": "Mam******",
+      "wagered": 359258.21,
+      "prize": 1437
+    },
+    {
+      "rank": "7",
+      "name": "XJQ******",
+      "wagered": 199260.41,
+      "prize": 797
+    },
+    {
+      "rank": "8",
+      "name": "VGs******",
+      "wagered": 186540.11,
+      "prize": 746
+    },
+    {
+      "rank": "9",
+      "name": "Big******",
+      "wagered": 159260.17,
+      "prize": 637
+    },
+    {
+      "rank": "10",
+      "name": "lun******",
+      "wagered": 119856.76,
+      "prize": 479
+    },
+    {
+      "rank": "11",
+      "name": "Jen******",
+      "wagered": 115426.18,
+      "prize": 461
+    },
+    {
+      "rank": "12",
+      "name": "Kic******",
+      "wagered": 95765.64,
+      "prize": 383
+    },
+    {
+      "rank": "13",
+      "name": "iem******",
+      "wagered": 90765.2,
+      "prize": 363
+    },
+    {
+      "rank": "14",
+      "name": "hor******",
+      "wagered": 85600.55,
+      "prize": 342
+    },
+    {
+      "rank": "15",
+      "name": "the******",
+      "wagered": 76379.57,
+      "prize": 305
+    },
+    {
+      "rank": "16",
+      "name": "Hma******",
+      "wagered": 57321.14,
+      "prize": 229
+    },
+    {
+      "rank": "17",
+      "name": "Pic******",
+      "wagered": 49672.71,
+      "prize": 198
+    },
+    {
+      "rank": "18",
+      "name": "Ame******",
+      "wagered": 47622.95,
+      "prize": 190
+    },
+    {
+      "rank": "19",
+      "name": "85Y******",
+      "wagered": 45001.09,
+      "prize": 180
+    },
+    {
+      "rank": "20",
+      "name": "Jan******",
+      "wagered": 43154.89,
+      "prize": 172
+    },
+    {
+      "rank": "21",
+      "name": "kle******",
+      "wagered": 39389.79,
+      "prize": 157
+    },
+    {
+      "rank": "22",
+      "name": "p0w******",
+      "wagered": 37841.25,
+      "prize": 151
+    },
+    {
+      "rank": "23",
+      "name": "Kmk******",
+      "wagered": 36091.83,
+      "prize": 144
+    },
+    {
+      "rank": "24",
+      "name": "Swe******",
+      "wagered": 35558.39,
+      "prize": 142
+    },
+    {
+      "rank": "25",
+      "name": "var******",
+      "wagered": 31158.88,
+      "prize": 124
+    },
+    {
+      "rank": "26",
+      "name": "Sau******",
+      "wagered": 31090.68,
+      "prize": 124
+    },
+    {
+      "rank": "27",
+      "name": "Bbj******",
+      "wagered": 29389.58,
+      "prize": 117
+    },
+    {
+      "rank": "28",
+      "name": "Dar******",
+      "wagered": 28783.57,
+      "prize": 115
+    },
+    {
+      "rank": "29",
+      "name": "CL4******",
+      "wagered": 21248.5,
+      "prize": 84
+    },
+    {
+      "rank": "30",
+      "name": "Irv******",
+      "wagered": 18378.44,
+      "prize": 73
+    },
+    {
+      "rank": "31",
+      "name": "Aki******",
+      "wagered": 18086.89,
+      "prize": 72
+    },
+    {
+      "rank": "32",
+      "name": "kap******",
+      "wagered": 17965.95,
+      "prize": 71
+    },
+    {
+      "rank": "33",
+      "name": "Pea******",
+      "wagered": 16966.28,
+      "prize": 67
+    },
+    {
+      "rank": "34",
+      "name": "Mun******",
+      "wagered": 15014.72,
+      "prize": 60
+    },
+    {
+      "rank": "35",
+      "name": "Ter******",
+      "wagered": 14245.8,
+      "prize": 56
+    },
+    {
+      "rank": "36",
+      "name": "Jay******",
+      "wagered": 13596.08,
+      "prize": 54
+    },
+    {
+      "rank": "37",
+      "name": "Cla******",
+      "wagered": 13322.8,
+      "prize": 53
+    },
+    {
+      "rank": "38",
+      "name": "484******",
+      "wagered": 13198.38,
+      "prize": 52
+    },
+    {
+      "rank": "39",
+      "name": "Yum******",
+      "wagered": 11795.59,
+      "prize": 47
+    },
+    {
+      "rank": "40",
+      "name": "big******",
+      "wagered": 11418.71,
+      "prize": 45
+    },
+    {
+      "rank": "41",
+      "name": "jud******",
+      "wagered": 11390.61,
+      "prize": 45
+    },
+    {
+      "rank": "42",
+      "name": "Cot******",
+      "wagered": 11377.56,
+      "prize": 45
+    },
+    {
+      "rank": "43",
+      "name": "tub******",
+      "wagered": 10942.6,
+      "prize": 43
+    },
+    {
+      "rank": "44",
+      "name": "xco******",
+      "wagered": 10506.14,
+      "prize": 42
+    },
+    {
+      "rank": "45",
+      "name": "pin******",
+      "wagered": 10328.21,
+      "prize": 41
+    },
+    {
+      "rank": "46",
+      "name": "Mic******",
+      "wagered": 8970.96,
+      "prize": 35
+    },
+    {
+      "rank": "47",
+      "name": "Eri******",
+      "wagered": 8824.7,
+      "prize": 35
+    },
+    {
+      "rank": "48",
+      "name": "Lor******",
+      "wagered": 7414.15,
+      "prize": 29
+    },
+    {
+      "rank": "49",
+      "name": "Mrs******",
+      "wagered": 7405.47,
+      "prize": 29
+    },
+    {
+      "rank": "50",
+      "name": "Jar******",
+      "wagered": 7161.03,
+      "prize": 28
+    },
+    {
+      "rank": "51",
+      "name": "hul******",
+      "wagered": 6915.42,
+      "prize": 27
+    },
+    {
+      "rank": "52",
+      "name": "Sal******",
+      "wagered": 6504.48,
+      "prize": 26
+    },
+    {
+      "rank": "53",
+      "name": "bab******",
+      "wagered": 6339.74,
+      "prize": 25
+    }
+  ],
+  "Points": [
+    {
+      "rank": "4",
+      "name": "okleeham",
+      "wagered": 49999
+    },
+    {
+      "rank": "5",
+      "name": "r00t_pt",
+      "wagered": 49987
+    },
+    {
+      "rank": "6",
+      "name": "trooperlady",
+      "wagered": 120
+    },
+    {
+      "rank": "7",
+      "name": "saket0024_76600",
+      "wagered": 120
+    },
+    {
+      "rank": "8",
+      "name": "itachiwo",
+      "wagered": 120
+    },
+    {
+      "rank": "9",
+      "name": "gatornittany",
+      "wagered": 110
+    },
+    {
+      "rank": "10",
+      "name": "dportdzy1329",
+      "wagered": 100
+    },
+    {
+      "rank": "11",
+      "name": "sadeboi",
+      "wagered": 100
+    },
+    {
+      "rank": "12",
+      "name": "wrathofarawn",
+      "wagered": 100
+    },
+    {
+      "rank": "13",
+      "name": "ijumpshot",
+      "wagered": 100
+    },
+    {
+      "rank": "14",
+      "name": "lithium_rogue",
+      "wagered": 90
+    },
+    {
+      "rank": "15",
+      "name": "goten0911",
+      "wagered": 80
+    },
+    {
+      "rank": "16",
+      "name": "tshdor",
+      "wagered": 80
+    },
+    {
+      "rank": "17",
+      "name": "4jigger",
+      "wagered": 70
+    },
+    {
+      "rank": "18",
+      "name": "tanmay064359",
+      "wagered": 50
+    },
+    {
+      "rank": "19",
+      "name": "uptistic",
+      "wagered": 20
+    },
+    {
+      "rank": "20",
+      "name": "trizzle5586",
+      "wagered": 10
+    },
+    {
+      "rank": "21",
+      "name": "saquibmem",
+      "wagered": 0
+    },
+    {
+      "rank": "22",
+      "name": "bigzai2601",
+      "wagered": 0
+    },
+    {
+      "rank": "23",
+      "name": "jandrod888",
+      "wagered": 0
+    },
+    {
+      "rank": "24",
+      "name": "kleryyyy",
+      "wagered": 0
+    },
+    {
+      "rank": "25",
+      "name": "nlyt",
+      "wagered": 0
+    },
+    {
+      "rank": "26",
+      "name": "jdmoonan",
+      "wagered": 0
+    },
+    {
+      "rank": "27",
+      "name": "patheticasylum",
+      "wagered": 0
+    },
+    {
+      "rank": "28",
+      "name": "jbostic01",
+      "wagered": 0
+    },
+    {
+      "rank": "29",
+      "name": "chaoticcanine_og",
+      "wagered": 0
+    },
+    {
+      "rank": "30",
+      "name": "teenysky",
+      "wagered": 0
+    },
+    {
+      "rank": "31",
+      "name": "alexisr__",
+      "wagered": 0
+    },
+    {
+      "rank": "32",
+      "name": "tubbs_72366",
+      "wagered": 0
+    },
+    {
+      "rank": "33",
+      "name": "kashdaddy_84681",
+      "wagered": 0
+    },
+    {
+      "rank": "34",
+      "name": "junren0942",
+      "wagered": 0
+    },
+    {
+      "rank": "35",
+      "name": "creationsxp",
+      "wagered": 0
+    },
+    {
+      "rank": "36",
+      "name": "tesvy",
+      "wagered": 0
+    },
+    {
+      "rank": "37",
+      "name": "farvejking",
+      "wagered": 0
+    },
+    {
+      "rank": "38",
+      "name": "zakwan97",
+      "wagered": 0
+    },
+    {
+      "rank": "39",
+      "name": "gbaby745",
+      "wagered": 0
+    },
+    {
+      "rank": "40",
+      "name": "bpokemob",
+      "wagered": 0
+    },
+    {
+      "rank": "41",
+      "name": "mooneymennft.stake",
+      "wagered": 0
+    },
+    {
+      "rank": "42",
+      "name": ".cherie",
+      "wagered": 0
+    }
+  ]
+}
