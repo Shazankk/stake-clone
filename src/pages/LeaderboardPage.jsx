@@ -1,18 +1,19 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import ScrollButtons from "../components/ScrollButtons";
 import LeaderboardTable from "../components/LeaderboardTable";
 
 const LeaderboardPage = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Append a cache-busting parameter (timestamp) to the request URL
-        const response = await fetch(`/data.json?cacheBust=${Date.now()}`);
+        const cacheBustedUrl = `/data.json?cb=${Date.now()}`;
+        const response = await fetch(cacheBustedUrl);
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const result = await response.json();
         setData(result);
@@ -22,21 +23,17 @@ const LeaderboardPage = () => {
         setLoading(false);
       }
     };
-
     fetchData();
   }, []);
 
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
   return (
-    <div className="p-6 bg-gray-900 min-h-screen flex justify-center">
-      <div className="w-full max-w-8xl">
-        {loading ? (
-          <p className="text-white text-center">Loading...</p>
-        ) : error ? (
-          <p className="text-red-500 text-center">Error: {error}</p>
-        ) : (
-          <LeaderboardTable data={data} />
-        )}
-      </div>
+    <div className="bg-gray-900 min-h-screen p-6">
+      <h1 className="text-3xl font-bold text-white mb-8">Leaderboard</h1>
+      <ScrollButtons data={data} />
+      <LeaderboardTable data={data.Stake || []} />
     </div>
   );
 };
