@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 const LeaderboardCard = ({ rank, username, wagered, prize }) => {
   // Define the trophy images based on rank
   const trophyImages = {
-    1: "trophy1.png",
-    2: "trophy2.png",
-    3: "trophy3.png",
+    1: "/trophy1.webp",
+    2: "/trophy2.webp",
+    3: "/trophy3.webp",
   };
 
   return (
@@ -18,7 +18,7 @@ const LeaderboardCard = ({ rank, username, wagered, prize }) => {
         <img
           src={trophyImages[rank]}
           alt={`${rank} place trophy`}
-          className="h-auto w-32 object-contain" // Ensure proper aspect ratio
+          className="h-auto w-24 object-contain" // Ensure proper aspect ratio
         />
       </div>
 
@@ -45,7 +45,6 @@ const LeaderboardCard = ({ rank, username, wagered, prize }) => {
   );
 };
 
-// Define prop types
 LeaderboardCard.propTypes = {
   rank: PropTypes.number.isRequired,
   username: PropTypes.string.isRequired,

@@ -42,15 +42,41 @@ const ScrollButtons = ({ data }) => {
 
       {/* Top 3 Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center mb-10">
-        {topThree.map((entry, index) => (
-          <LeaderboardCard
-            key={index}
-            rank={entry.rank}
-            username={entry.user || entry.name}
-            wagered={entry.wagered}
-            prize={entry.prize !== "NA" ? entry.prize : undefined}
-          />
-        ))}
+        {/* Rank 1 */}
+        {topThree[0] && (
+          <div className="order-1 sm:order-2">
+            <LeaderboardCard
+              rank={topThree[0].rank}
+              username={topThree[0].user || topThree[0].name}
+              wagered={topThree[0].wagered}
+              prize={topThree[0].prize}
+            />
+          </div>
+        )}
+
+        {/* Rank 2 */}
+        {topThree[1] && (
+          <div className="order-2 sm:order-1 sm:translate-y-4">
+            <LeaderboardCard
+              rank={topThree[1].rank}
+              username={topThree[1].user || topThree[1].name}
+              wagered={topThree[1].wagered}
+              prize={topThree[1].prize}
+            />
+          </div>
+        )}
+
+        {/* Rank 3 */}
+        {topThree[2] && (
+          <div className="order-3 sm:order-3 sm:translate-y-6">
+            <LeaderboardCard
+              rank={topThree[2].rank}
+              username={topThree[2].user || topThree[2].name}
+              wagered={topThree[2].wagered}
+              prize={topThree[2].prize}
+            />
+          </div>
+        )}
       </div>
 
       {/* Leaderboard Table */}
