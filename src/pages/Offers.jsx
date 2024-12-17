@@ -24,7 +24,7 @@ const Offers = () => {
           features={[
             "Minimum deposit and wager: 15$, 49$",
             "Free 21$ Reward",
-            "Contact live support to claim reward"
+            "Join discord and verify your account"
           ]}
           buttonLink="https://stake.com/?offer=TeamCGF&c=VzhyLGwq"
         />
