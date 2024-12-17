@@ -1,4 +1,6 @@
 import OfferCard from "../components/OfferCard";
+import stakeus from "../assets/stake.svg"
+import stake from "../assets/stake_us.svg"
 
 const stakeimgs = {
   stakecom:
@@ -16,20 +18,21 @@ const Offers = () => {
       <div className="flex flex-wrap justify-center gap-8">
         {/* Stake.com Card */}
         <OfferCard
-          logo={stakeimgs.stakecom}
+          logo={stakeus}
           title="Stake.com Bonus"
           code="TEAMCGF"
           features={[
-            "Exclusive 200%",
-            "Min: $100 - Max: $1000",
-            "Join discord and verify your account.",
+            "Minimum deposit > 15$",
+            "Minimum Wager > 49$",
+            "KYC 2 Reward --> 3$ * 7 Reloads (21$)",
+            "Contact live support to claim reward",
           ]}
           buttonLink="https://stake.com/?offer=TeamCGF&c=VzhyLGwq"
         />
 
         {/* Stake.us Card */}
         <OfferCard
-          logo={stakeimgs.stakeus}
+          logo={stake}
           title="Stake.us Bonus"
           code="TEAMCGF"
           features={[
