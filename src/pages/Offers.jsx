@@ -1,13 +1,6 @@
 import OfferCard from "../components/OfferCard";
-import stakeus from "../assets/stake.svg"
-import stake from "../assets/stake_us.svg"
-
-const stakeimgs = {
-  stakecom:
-    "https://www.bigfoltz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstake.eb763cfa.png&w=750&q=75",
-  stakeus:
-    "https://www.bigfoltz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstakeus.bb058c27.png&w=750&q=75",
-};
+import stakeus from "../assets/stake.svg";
+import stake from "../assets/stake_us.svg";
 
 const Offers = () => {
   return (
@@ -23,8 +16,8 @@ const Offers = () => {
           code="TEAMCGF"
           features={[
             "Free 21$",
-            "Minimum deposit and wager: 15$, 49$",
-            "Join discord and verify your account"
+            "Minimum deposit 15$",
+            "Join discord and verify your account",
           ]}
           buttonLink="https://stake.com/?offer=TeamCGF&c=VzhyLGwq"
         />
@@ -37,7 +30,7 @@ const Offers = () => {
           features={[
             "Free $25",
             "Free 250k Gold Coin",
-            "Join discord and verify your account.",
+            "Join discord and verify your account",
           ]}
           buttonLink="https://stake.us/?offer=TeamCGF&c=yZu0i4rE"
         />
