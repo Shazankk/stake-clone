@@ -15,8 +15,8 @@ const Offers = () => {
           title="Stake.com Bonus"
           code="TEAMCGF"
           features={[
-            "Free 21$",
-            "Minimum deposit 15$",
+            "Free $21",
+            "Minimum deposit $15",
             "Join discord and verify your account",
           ]}
           buttonLink="https://stake.com/?offer=TeamCGF&c=VzhyLGwq"
