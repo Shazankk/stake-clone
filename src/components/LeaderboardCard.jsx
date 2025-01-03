@@ -1,7 +1,7 @@
 import { Card } from "flowbite-react";
 import PropTypes from "prop-types";
 
-const LeaderboardCard = ({ rank, username, wagered, prize }) => {
+const LeaderboardCard = ({ rank, username, wagered, prize, category }) => {
   // Define the trophy images based on rank
   const trophyImages = {
     1: "/trophy1.webp",
@@ -29,16 +29,22 @@ const LeaderboardCard = ({ rank, username, wagered, prize }) => {
 
       {/* Wagered Amount */}
       <div className="text-center mb-4">
-        <span className="text-xs font-semibold text-gray-400">WAGERED</span>
+        <span className="text-xs font-semibold text-gray-400">
+          {category === "Points" ? "POINTS" : "WAGERED"}
+        </span>
         <div className="text-green-400 text-lg font-bold">
-          ${wagered.toLocaleString()}
+          {category === "Points"
+            ? wagered.toLocaleString()
+            : `$${wagered.toLocaleString()}`}
         </div>
       </div>
 
       {/* Prize Amount */}
       {prize !== undefined && prize !== "NA" && (
         <div className="bg-gray-700 w-full text-center py-2 rounded-lg text-lg font-semibold hover:bg-gray-600 transition-colors duration-200 ease-in-out">
-          ${prize.toLocaleString()}
+          {category === "Wager Raffle"
+            ? `🎟️ ${prize.toLocaleString()}`
+            : `$${prize.toLocaleString()}`}
         </div>
       )}
     </Card>
@@ -50,6 +56,7 @@ LeaderboardCard.propTypes = {
   username: PropTypes.string.isRequired,
   wagered: PropTypes.number.isRequired,
   prize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  category: PropTypes.string.isRequired,
 };
 
 export default LeaderboardCard;

@@ -50,6 +50,7 @@ const ScrollButtons = ({ data }) => {
               username={topThree[0].user || topThree[0].name}
               wagered={topThree[0].wagered}
               prize={topThree[0].prize}
+              category={selectedCategory}
             />
           </div>
         )}
@@ -62,6 +63,7 @@ const ScrollButtons = ({ data }) => {
               username={topThree[1].user || topThree[1].name}
               wagered={topThree[1].wagered}
               prize={topThree[1].prize}
+              category={selectedCategory}
             />
           </div>
         )}
@@ -74,13 +76,14 @@ const ScrollButtons = ({ data }) => {
               username={topThree[2].user || topThree[2].name}
               wagered={topThree[2].wagered}
               prize={topThree[2].prize}
+              category={selectedCategory}
             />
           </div>
         )}
       </div>
 
       {/* Leaderboard Table */}
-      <LeaderboardTable data={selectedData} />
+      <LeaderboardTable data={selectedData} category={selectedCategory} />
     </div>
   );
 };
