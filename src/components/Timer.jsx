@@ -1,31 +1,40 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
-const Timer = () => {
+const Timer = ({ category }) => {
   const calculateTimeLeft = () => {
-    // Get current time as a timestamp in UTC
-    const nowUTC = Date.now(); // Always in UTC
+    const now = Date.now();
 
-    const utcPlusTwo = nowUTC;
+    let targetDateMillis;
 
-    // Calculate the target date for UTC+2
-    const currentDateUTCPlusTwo = new Date(utcPlusTwo);
-    const targetMonth =
-      currentDateUTCPlusTwo.getUTCMonth() === 11
-        ? 0
-        : currentDateUTCPlusTwo.getUTCMonth() + 1;
-    const targetYear =
-      currentDateUTCPlusTwo.getUTCMonth() === 11
-        ? currentDateUTCPlusTwo.getUTCFullYear() + 1
-        : currentDateUTCPlusTwo.getUTCFullYear();
+    if (category === "Stake") {
+      const currentDate = new Date(now);
+      const targetMonth =
+        currentDate.getMonth() === 11 ? 0 : currentDate.getMonth() + 1;
+      const targetYear =
+        currentDate.getMonth() === 11
+          ? currentDate.getFullYear() + 1
+          : currentDate.getFullYear();
+      const targetDate = new Date(targetYear, targetMonth, 1, 0, 0, 0);
+      targetDateMillis = targetDate.getTime();
+    } else if (category === "Wager Raffle") {
+      const currentDate = new Date(now);
+      const currentDay = currentDate.getDate();
+      const targetMonth = currentDate.getMonth();
+      const targetYear = currentDate.getFullYear();
 
-    // Target date is 1st of the next month at 00:00:00 UTC+2
-    const targetDateUTCPlusTwo = Date.UTC(targetYear, targetMonth, 1, 0, 0, 0);
+      if (currentDay < 16) {
+        const targetDate = new Date(targetYear, targetMonth, 16, 0, 0, 0);
+        targetDateMillis = targetDate.getTime();
+      } else {
+        const nextMonth = targetMonth === 11 ? 0 : targetMonth + 1;
+        const nextYear = targetMonth === 11 ? targetYear + 1 : targetYear;
+        const targetDate = new Date(nextYear, nextMonth, 1, 0, 0, 0);
+        targetDateMillis = targetDate.getTime();
+      }
+    }
 
-    // Add 2 hours to the target date to align with UTC+2
-    const targetDateMillis = targetDateUTCPlusTwo + 2 * 60 * 60 * 1000;
-
-    // Calculate the time difference
-    const difference = targetDateMillis - utcPlusTwo;
+    const difference = targetDateMillis - now;
 
     let timeLeft = {};
 
@@ -51,7 +60,7 @@ const Timer = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [category]);
 
   return (
     <div className="flex justify-center items-center p-6 bg-gray-900 rounded-lg shadow-lg text-green-400 space-x-6 transform hover:scale-105">
@@ -73,6 +82,10 @@ const Timer = () => {
       </div>
     </div>
   );
+};
+
+Timer.propTypes = {
+  category: PropTypes.string.isRequired,
 };
 
 export default Timer;

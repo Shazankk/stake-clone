@@ -17,11 +17,6 @@ function App() {
           Welcome to Team CGF Leaderboard
         </h1>
 
-        {/* Timer Section */}
-        <div className="flex justify-center w-full mb-8">
-          <Timer />
-        </div>
-
         {/* Leaderboard Section */}
         <div id="LeaderboardPage" className="w-full max-w-7xl mb-8">
           <LeaderboardPage />

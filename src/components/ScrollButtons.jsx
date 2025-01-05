@@ -2,20 +2,22 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import LeaderboardCard from "./LeaderboardCard";
 import LeaderboardTable from "./LeaderboardTable";
+import Timer from "./Timer";
 
-const ScrollButtons = ({ data }) => {
+const ScrollButtons = ({ data, onCategoryChange, selectedCategory }) => {
   const categories = Object.keys(data || {});
-  const [selectedCategory, setSelectedCategory] = useState(categories[0] || "");
+  const [localSelectedCategory, setLocalSelectedCategory] = useState(categories[0] || "");
 
   if (!data || categories.length === 0) {
     return <p className="text-center text-gray-300">No data available</p>;
   }
 
   const handleClick = (key) => {
-    setSelectedCategory(key);
+    setLocalSelectedCategory(key);
+    onCategoryChange(key);
   };
 
-  const selectedData = data[selectedCategory] || [];
+  const selectedData = data[localSelectedCategory] || [];
   const topThree = selectedData.slice(0, 3).map((item, index) => ({
     ...item,
     rank: index + 1,
@@ -30,7 +32,7 @@ const ScrollButtons = ({ data }) => {
             key={category}
             onClick={() => handleClick(category)}
             className={`px-6 py-2 rounded-lg text-lg font-medium ${
-              selectedCategory === category
+              localSelectedCategory === category
                 ? "bg-blue-600 text-white"
                 : "bg-gray-700 text-gray-300"
             }`}
@@ -82,6 +84,13 @@ const ScrollButtons = ({ data }) => {
         )}
       </div>
 
+      {/* Timer */}
+      {(selectedCategory === "Stake" || selectedCategory === "Wager Raffle") && (
+        <div className="flex justify-center w-full mb-8">
+          <Timer category={selectedCategory} />
+        </div>
+      )}
+
       {/* Leaderboard Table */}
       <LeaderboardTable data={selectedData} category={selectedCategory} />
     </div>
@@ -100,6 +109,8 @@ ScrollButtons.propTypes = {
       })
     )
   ).isRequired,
+  onCategoryChange: PropTypes.func.isRequired,
+  selectedCategory: PropTypes.string.isRequired,
 };
 
 export default ScrollButtons;
